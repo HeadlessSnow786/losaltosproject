@@ -8,9 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Companion</title>
     <style>
+		.container {
+			text-align: center;
+		}
+	</style>
+    <style>
+        h1, li, h2, div{
+            text-align:center
+        }
+    </style>
+    <style>
 		.box {
 			width: 200px;
 			height: 200px;
+            top: 100%;
+			left: 100%;
+			transform: translate(+100%);
 			border: 1px solid black;
 			background-color: lightgray;
 			padding: 10px;
@@ -24,8 +37,10 @@
     <ul>
         <li>Select School:</li>
       </ul>
-    <button>Submit</button>
-
+      <div class="container">
+		<button>Submit</button>
+      </div>
+    
     <h2>Map of Your School:</h2>
     <div class="box">
 		<h2>Box Title</h2>
