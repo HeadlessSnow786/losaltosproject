@@ -19,8 +19,8 @@
       // to the base of the flagpole.
       function initMap() {
         const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 10,
-          center: { lat: -33.9, lng: 151.2 },
+          zoom: 15,
+          center: { lat: 37.5651895, lng: -122.0166479 }, // coordinates for American High School
         });
 
         setMarkers(map);
@@ -43,7 +43,7 @@
         // Origins, anchor positions and coordinates of the marker increase in the X
         // direction to the right and in the Y direction down.
         const image = {
-          url: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+          url: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Basic_red_dot.png",
           // This marker is 20 pixels wide by 32 pixels high.
           size: new google.maps.Size(20, 32),
           // The origin for this image is (0, 0).
@@ -103,7 +103,7 @@
   <body>
     <div id="map"></div>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=INSERT_YOUR_API_KEY&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAyBYlUZ7nOfZPDazXJjGxLgLO6ASMQMk&callback=initMap&v=weekly"
       defer
     ></script>
   </body>
